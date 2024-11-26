@@ -1,3 +1,4 @@
+import 'package:chat_online/core/utils/route_utils.dart';
 import 'package:chat_online/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,8 @@ class ChatOnline extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         builder: (context, child) => const MaterialApp(
-                home: Center(
+            onGenerateRoute: RouteUtils.onGenerateRoute,
+            home: Center(
               child: Text("Welcome to Chat Online"),
             )));
   }
