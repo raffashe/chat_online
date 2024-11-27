@@ -4,4 +4,7 @@ const logo = "assets/logo.png";
 /// Routes/Screens names
 const splash = "/splash";
 const home = "/home";
-const wrapper = "/wrapper";
+
+/// Auth
+const signup = "/signup";
+const login = "/login";
