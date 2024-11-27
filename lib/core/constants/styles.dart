@@ -6,3 +6,4 @@ final body = TextStyle(
   fontSize: 14.sp,
 );
 final small = TextStyle(fontSize: 12.sp);
+final smallb = TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold);
