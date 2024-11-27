@@ -1,6 +1,6 @@
 # Chat Online
 
-![chat_online](https://github.com/user-attachments/assets/36d2fd24-5852-4e58-abe3-ec5007709137)
+<img width="1500" alt="capa" src="https://github.com/user-attachments/assets/0e545b9d-b031-4256-9e03-e3157c7b4d75">
 
 ## Sobre o Projeto
 
