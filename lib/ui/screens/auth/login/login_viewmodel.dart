@@ -3,7 +3,6 @@ import 'dart:developer';
 import 'package:chat_online/core/other/base_viewmodel.dart';
 import 'package:chat_online/core/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class LoginViewmodel extends BaseViewmodel {
   final AuthService _auth;

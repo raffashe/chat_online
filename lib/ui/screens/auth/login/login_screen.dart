@@ -47,6 +47,7 @@ class LoginScreen extends StatelessWidget {
                   onPressed: () async {
                     try {
                       await model.login();
+                      context.showSnackBar("User logged in successfuly");
                     } on FirebaseAuthException catch (e) {
                       context.showSnackBar(e.toString());
                     } catch (e) {
