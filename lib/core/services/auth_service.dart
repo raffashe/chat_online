@@ -16,8 +16,10 @@ class AuthService {
       }
     } on FirebaseAuthException catch (e) {
       log(e.message!);
+      rethrow;
     } catch (e) {
       log(e.toString());
+      rethrow;
     }
     return null;
   }
@@ -35,9 +37,20 @@ class AuthService {
       }
     } on FirebaseAuthException catch (e) {
       log(e.message!);
+      rethrow;
     } catch (e) {
       log(e.toString());
+      rethrow;
     }
     return null;
+  }
+
+  Future<void> logout() async {
+    try {
+      await _auth.signOut();
+    } catch (e) {
+      log(e.toString());
+      rethrow;
+    }
   }
 }
