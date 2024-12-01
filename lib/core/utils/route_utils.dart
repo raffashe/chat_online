@@ -5,11 +5,14 @@ import 'package:chat_online/ui/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../ui/screens/splash/splash_screen.dart';
+import '../../ui/screens/wrapper/wrapper.dart';
 
 class RouteUtils {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       /// Home ---------------------------------------------------------------
+      case wrapper:
+        return MaterialPageRoute(builder: (context) => const Wrapper());
       case splash:
         return MaterialPageRoute(builder: (context) => const SplashScreen());
       case home:

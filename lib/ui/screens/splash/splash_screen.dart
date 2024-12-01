@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:chat_online/core/constants/string.dart';
+import 'package:chat_online/ui/screens/wrapper/wrapper.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     _timer = Timer(const Duration(seconds: 3), () {
-      Navigator.pushNamed(context, signup);
+      Navigator.pushNamed(context, wrapper);
     });
   }
 
