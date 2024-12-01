@@ -1,3 +1,4 @@
+import 'package:chat_online/core/services/auth_service.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/constants/colors.dart';
@@ -15,9 +16,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(
-          "Welcome to HomeScreen",
-          style: header.copyWith(color: accent),
+        child: InkWell(
+          onTap: () {
+            AuthService().logout();
+          },
+          child: Text(
+            "Welcome to HomeScreen",
+            style: header.copyWith(color: accent),
+          ),
         ),
       ),
     );

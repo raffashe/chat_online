@@ -62,6 +62,8 @@ class SignupScreen extends StatelessWidget {
                       try {
                         await model.signup();
                         context.showSnackBar("User signed up successfuly");
+
+                        Navigator.pop(context);
                       } on FirebaseAuthException catch (e) {
                         context.showSnackBar(e.toString());
                       } catch (e) {
