@@ -1,73 +1,74 @@
-# Chat Online
+# App Flutter - Chat Online
 
 ![chat_online](https://github.com/user-attachments/assets/36d2fd24-5852-4e58-abe3-ec5007709137)
 
-## Sobre o Projeto
+## About the Project
 
-O **Chat Online** é um aplicativo simples de chat desenvolvido com **Flutter** e integrado ao **Firebase** para autenticação e comunicação em tempo real. Ele inclui as seguintes funcionalidades:
+The **Chat Online** is a simple chat application developed with **Flutter** and integrated with **Firebase** for authentication and real-time communication. It includes the following features:
 
-- **Tela de Splash**
-- **Cadastro (Sign Up)**
+- **Splash Screen**
+- **Sign Up**
 - **Login**
-- **Lista de Conversas**
-- **Tela de Bate-papo**
-- **Mensagens em tempo real** (real-time messaging)
+- **Conversations List**
+- **Chat Screen**
+- **Real-time Messaging**
 
-### Funcionalidades
+### Features
 
-- **UI Design**: Interface simples e intuitiva.
-- **Firebase Integration**: Integração com Firebase para autenticação e armazenamento de dados.
-- **Firebase Authentication**: Autenticação de usuários com email e senha.
-- **Firestore Database Integration**: Uso do Firestore como banco de dados para armazenar e recuperar conversas.
-- **Realtime Chat Functionality**: Bate-papo em tempo real com envio e recebimento de mensagens.
-- **Unread Message Counter**: Contador de mensagens não lidas.
-- **Last Message shown**: Exibição da última mensagem na lista de conversas.
-- **Error Handling**: Tratamento de erros robusto.
-- **Optimization and Best Practices**: Código otimizado com boas práticas.
-- **Enhancement & Debugging**: Melhoria contínua e depuração de código.
-- **Provider State Management**: Gerenciamento de estado utilizando o Provider.
-- **MVVM Architecture**: Arquitetura baseada no padrão MVVM.
+- **UI Design**: Simple and intuitive interface.
+- **Firebase Integration**: Integration with Firebase for authentication and data storage.
+- **Firebase Authentication**: User authentication with email and password.
+- **Firestore Database Integration**: Use of Firestore as the database for storing and retrieving conversations.
+- **Realtime Chat Functionality**: Real-time chat with sending and receiving messages.
+- **Unread Message Counter**: Counter for unread messages.
+- **Last Message shown**: Displays the last message in the conversations list.
+- **Error Handling**: Robust error handling.
+- **Optimization and Best Practices**: Optimized code with best practices.
+- **Enhancement & Debugging**: Continuous improvement and code debugging.
+- **Provider State Management**: State management using Provider.
+- **MVVM Architecture**: Architecture based on the MVVM pattern.
 
-## Instalação e Execução do Projeto
+## Installation and Running the Project
 
-Siga os passos abaixo para configurar e rodar o projeto em sua máquina:
+Follow the steps below to set up and run the project on your machine:
 
-### 1. Clonar o repositório
+### 1. Clone the repository
 ```bash
-git clone https://github.com/seu-usuario/chat_online.git
+git clone https://github.com/raffashe/chat_online.git
 cd chat_online
 ```
 
-### 2. Instalar as dependências do Flutter
+### 2. Install Flutter dependencies
 ```bash
 flutter pub get
 ```
 
-### 3. Configurar o Firebase
-> **Observação**: Como o projeto está conectado ao Firebase, você precisará notificar o desenvolvedor para configurar corretamente o Firebase no seu ambiente de testes. Entre em contato para obter os arquivos de configuração (`google-services.json` para Android e `GoogleService-Info.plist` para iOS).
+### 3. Set up Firebase
+> **Note**: As the project is connected to Firebase, you will need to notify the developer to configure Firebase correctly in your testing environment. Contact them to get the configuration files (`google-services.json` for Android and `GoogleService-Info.plist` for iOS).
 
-### 4. Executar o projeto
+### 4. Run the project
 ```bash
 flutter run
 ```
 
-## Dependências
+## Dependencies
 
-O projeto utiliza as seguintes dependências:
+The project uses the following dependencies:
 
-| Dependência           | Versão  | Descrição                                                               |
-| --------------------- | ------- | ----------------------------------------------------------------------- |
-| `firebase_core`       | ^3.8.0  | Integração do Flutter com o Firebase para inicialização do app.         |
-| `firebase_auth`       | ^5.3.3  | Autenticação de usuários utilizando Firebase Authentication.            |
-| `cloud_firestore`     | ^5.5.0  | Banco de dados NoSQL em tempo real oferecido pelo Firebase Firestore.   |
-| `firebase_storage`    | ^12.3.6 | Armazenamento de arquivos e mídia no Firebase Storage.                  |
-| `provider`            | ^6.1.2  | Gerenciamento de estado simples com a abordagem Provider.               |
-| `flutter_screenutil`  | ^5.9.3  | Ferramenta para responsividade da interface de usuário.                 |
-| `cupertino_icons`     | ^1.0.8  | Pacote de ícones no estilo Cupertino para iOS.                          |
-| `flutter_lints` (dev) | ^4.0.0  | Conjunto de lints recomendados para boas práticas de código no Flutter. |
-| `flutter_test` (dev)  |         | Framework de testes para aplicações Flutter.                            |
+| Dependency            | Version  | Description                                                              |
+| --------------------- | -------- | ------------------------------------------------------------------------ |
+| `firebase_core`       | ^3.8.0   | Flutter integration with Firebase for app initialization.                |
+| `firebase_auth`       | ^5.3.3   | User authentication using Firebase Authentication.                       |
+| `cloud_firestore`     | ^5.5.0   | Real-time NoSQL database provided by Firebase Firestore.                 |
+| `firebase_storage`    | ^12.3.6  | File and media storage in Firebase Storage.                              |
+| `provider`            | ^6.1.2   | Simple state management using the Provider approach.                     |
+| `flutter_screenutil`  | ^5.9.3   | Tool for responsive UI design.                                           |
+| `cupertino_icons`     | ^1.0.8   | Cupertino-style icon package for iOS.                                    |
+| `flutter_lints` (dev) | ^4.0.0   | Recommended set of lints for good coding practices in Flutter.           |
+| `flutter_test` (dev)  |          | Testing framework for Flutter applications.                              |
 
-## Observações
+## Notes
 
-- O Firebase precisa ser configurado corretamente para que o projeto funcione. Isso inclui adicionar os arquivos de configuração do Firebase para Android e iOS.
-- Certifique-se de estar usando o SDK do Flutter compatível conforme especificado no arquivo `pubspec.yaml`.
+- Firebase needs to be properly configured for the project to work. This includes adding Firebase configuration files for both Android and iOS.
+- Make sure to use the compatible Flutter SDK version as specified in the `pubspec.yaml` file.
+
